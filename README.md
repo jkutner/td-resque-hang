@@ -22,7 +22,7 @@ Then do this in another terminal:
 
 Then kill the Trinidad server with Ctrl+C and run this again:
 
-    $ ps aux |grep java
+    $ ps aux | grep java
     user1        27603   0.0  0.0  2434892    404 s003  R+   11:20AM   0:00.00 grep java
 
 Now kill the Redis process with Crtl+C and restart the Trinidad server:
@@ -31,7 +31,7 @@ Now kill the Redis process with Crtl+C and restart the Trinidad server:
 
 After the server is running, kill it with Ctrl+C and check the processes again:
 
-    $ ps aux |grep java
+    $ ps aux | grep java
     user1        27489   0.0  0.0  2434892    460 s003  R+   11:19AM   0:00.00 grep java
     user1        27433   0.0  4.3  3297280 178872 s004  S    11:19AM   0:24.79 /System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/bin/java -Dfile.encoding=UTF-8 -Djdk.home= -Djruby.home=/Users/user1/.rvm/rubies/jruby-1.6.5 -Djruby.script=jruby -Djruby.shell=/bin/sh -Djffi.boot.library.path=/Users/user1/.rvm/rubies/jruby-1.6.5/lib/native/Darwin -Xmx500m -Xss2048k -Djruby.memory.max=500m -Djruby.stack.max=2048k -Dsun.java.command=org.jruby.Main -Djava.class.path= -Xbootclasspath/a:/Users/user1/.rvm/rubies/jruby-1.6.5/lib/jruby.jar org/jruby/Main /Users/user1/.rvm/gems/jruby-1.6.5/bin/trinidad -t
 
