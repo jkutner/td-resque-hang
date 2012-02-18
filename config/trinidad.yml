@@ -1,0 +1,7 @@
+extensions:
+  resque:
+    queues: critical, normal, low
+    count:  1
+    path: 'lib/workers'
+    redis_host: 'localhost:6379'
+    disable_web: true
